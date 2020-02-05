@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Estudiar2</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_user">Ingrese usuario</string>
+    <string name="login_txtview_usuario">Ingrese usuario</string>
+    <string name="login_txt_password">Ingrese contraseña</string>
+    <string name="btn_login">Ingresar</string>
+    <string name="menu">Listado de Profesores</string>
+
+</resources>
