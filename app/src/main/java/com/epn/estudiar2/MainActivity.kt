@@ -2,12 +2,11 @@ package com.epn.estudiar2
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import androidx.fragment.app.FragmentActivity
+
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.firestore.FirebaseFirestore
@@ -61,7 +60,22 @@ class MainActivity : AppCompatActivity() {
                 irLista.putExtra("usuario", editTextUsuario.text.toString())
                 startActivity(irLista)
                 finish()//cierra el activity
+            }else{
+                editTextUsuario.setText("")
+                editText2Password.setText("")
+                /*
+                val builder = AlertDialog.Builder(this)
+                builder.setTitle("Advertencia")
+                builder.setMessage("Usuario o cantraseña incorrectos")
+                builder.setPositiveButton("Salir", { dialogInterface: DialogInterface, i: Int ->
+                    finish()
+                })
+                builder.setNegativeButton("Salissr", { dialogInterface: DialogInterface, i: Int ->
+                    builder.show()
+                })*/
+
             }
+
 
         }
 
